@@ -1,7 +1,7 @@
 package cn.mindray.showtime.test;
 
-import org.graalvm.polyglot.Context;
-import org.graalvm.polyglot.Value;
+//import org.graalvm.polyglot.Context;
+//import org.graalvm.polyglot.Value;
 
 /**
  * @author: heshiye
@@ -12,17 +12,17 @@ import org.graalvm.polyglot.Value;
 public class PolyglotJS {
 
     public static void main(String[] args) {
-        Context context = Context.create();
-        Value js = context.eval("js",
-                        """
-                                (
-                                    function(a,b){
-                                        return a-b;
-                                    }
-                                )
-                                """)
-                .execute(120, 20);
-        System.out.println(js.asInt());
+//        Context context = Context.create();
+//        Value js = context.eval("js",
+//                        """
+//                                (
+//                                    function(a,b){
+//                                        return a-b;
+//                                    }
+//                                )
+//                                """)
+//                .execute(120, 20);
+//        System.out.println(js.asInt());
     }
 
 }
